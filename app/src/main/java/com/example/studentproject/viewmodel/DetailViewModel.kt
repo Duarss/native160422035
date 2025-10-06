@@ -17,6 +17,11 @@ class DetailViewModel(application: Application): AndroidViewModel(application) {
     val TAG = "volleytag"
     private var queue: RequestQueue?= null
 
+    fun update() {
+        // diisi coding untuk simpan studentLD object ke server
+        // pakai volley
+    }
+
     fun fetch(id:String) {
         queue = Volley.newRequestQueue(getApplication())
         val url = "https://www.jsonkeeper.com/b/LLMW"
